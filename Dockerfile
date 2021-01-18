@@ -79,7 +79,7 @@ RUN cd /root && \
         libmp3lame-dev \
         mplayer \
         screen && \
-    git clone -b main https://github.com/rojserbest/VoiceChatPyroBot.git && cd VoiceChatPyroBot && pip3 install -r requirements.txt \
+    git clone -b main https://github.com/rojserbest/VoiceChatPyroBot.git && cd VoiceChatPyroBot \
     apt-get update && apt build-dep pulseaudio -y && \
     cd /tmp && apt source pulseaudio && \
     pulsever=$(pulseaudio --version | awk '{print $2}') && cd /tmp/pulseaudio-$pulsever && ./configure \
