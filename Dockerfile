@@ -78,7 +78,6 @@ RUN cd /root && \
         libopus-dev \
         libmp3lame-dev \
         mplayer \
-        qbittorrent-nox \
         screen && \
     git clone -b main https://github.com/rojserbest/VoiceChatPyroBot.git && cd VoiceChatPyroBot && pip3 install -r requirements.txt && \
     wget https://telegram.org/dl/desktop/linux -O tdesktop.tar.xz && tar -xf tdesktop.tar.xz && \
@@ -156,4 +155,4 @@ COPY xrdp.ini /etc/xrdp/xrdp.ini
 COPY autostartup.sh /root/
 CMD ["/bin/bash", "/root/autostartup.sh"]
                                     
-EXPOSE 3389 22 8080
+EXPOSE 3389 22
